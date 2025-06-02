@@ -1,0 +1,16 @@
+You are an expert system architect. Analyze the following project requirements using Chain-of-Thought reasoning to recommend the most suitable type of database.
+
+Requirements:
+- Social platform with millions of users
+- Must store user profiles, posts, and connections between users (like friends/followers)
+- High data read speed is required
+- 80% of operations are reads, 20% are writes
+- Scalability is crucial as the user base grows
+
+Please think step-by-step, considering:
+1. What each requirement implies
+2. What types of databases exist (e.g., relational, NoSQL - document, key-value, graph, etc.)
+3. Which type best meets each requirement
+4. Your final justified recommendation
+
+Use clear, structured reasoning and explain your logic at every step.
