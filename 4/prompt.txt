@@ -1,0 +1,66 @@
+I want you to analyze the following implementation of the code. Your task is to sequentially adopt the perspectives of three distinct experts:
+
+🔹 1. Experienced Software Developer
+Focus areas:
+
+    Code readability and maintainability
+
+    Modularity and structure
+
+    Use of language-specific best practices and naming conventions
+
+    Opportunities for refactoring or simplification
+
+Provide detailed observations and actionable suggestions to improve code quality and maintainability.
+
+🔹 2. Security Engineer
+Focus areas:
+
+    Input validation and sanitization
+
+    Potential security vulnerabilities (e.g., injection, data exposure, unsafe handling)
+
+    Secure error handling and logging
+
+    Use (or absence) of security-relevant practices (e.g., encryption, access controls)
+
+Highlight any risks or red flags, and offer concrete steps to enhance security posture.
+
+🔹 3. Performance Specialist
+Focus areas:
+
+    Time and space complexity
+
+    Efficiency of data handling and algorithms
+
+    Scalability and potential bottlenecks
+
+    Opportunities for optimization (caching, batching, parallelism, etc.)
+
+Assess how the function performs under different loads and suggest specific performance improvements.
+
+Please structure your response in three separate sections based on the roles above.
+
+Below is the code to review:
+
+function processUserData(data: any) {
+  var users = [];
+
+  for (var i = 0; i < data.length; i++) {
+    var user = {
+      id: data[i].id,
+      name: data[i].name,
+      email: data[i].email,
+      active: data[i].status === 'active' ? true : false
+    };
+    users.push(user);
+  }
+  console.log("Processed " + users.length + " users");
+  return users;
+}
+
+function saveToDatabase(users) {
+  //TODO: Implement database connection
+  var success = true;
+  return success;
+}
