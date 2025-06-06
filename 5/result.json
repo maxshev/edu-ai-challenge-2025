@@ -1,0 +1,33 @@
+{
+  "Feedback_1": {
+    "sentiment": "Negative",
+    "isRelevant": true,
+    "mainSubject": "Sensor tracking reliability and connectivity issues",
+    "positives": [],
+    "painPoints": [
+      "Sensor stops tracking intermittently",
+      "Issue persists even when wired",
+      "Initial dongle was non-functional",
+      "High price despite technical issues"
+    ],
+    "improvementSuggestions": [
+      "Fix sensor tracking stability",
+      "Ensure dongle functionality before shipping",
+      "Improve quality control for high-priced product"
+    ],
+    "featuresMentioned": ["Sensor", "Wired performance", "Dongle", "Price"],
+    "userExpertise": "Experienced"
+  },
+  "Feedback_2": {
+    "sentiment": "Mixed",
+    "isRelevant": true,
+    "mainSubject": "Perceived value vs performance",
+    "positives": ["Product has no flaws (in user's opinion)"],
+    "painPoints": ["Not worth the price for the performance it offers"],
+    "improvementSuggestions": [
+      "Offer more competitive pricing relative to similar-performing products"
+    ],
+    "featuresMentioned": ["Price", "Performance", "Specifications"],
+    "userExpertise": "Unknown"
+  }
+}
