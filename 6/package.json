@@ -1,0 +1,15 @@
+{
+  "name": "6",
+  "version": "1.0.0",
+  "description": "<img src=\"enigma.png\" alt=\"Broken Enigma Machine\" width=\"300\"/>",
+  "main": "enigma.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
