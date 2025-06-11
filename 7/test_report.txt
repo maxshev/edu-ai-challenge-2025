@@ -1,0 +1,29 @@
+Sea Battle Game Test Coverage Report
+================================
+
+This file will be automatically updated with test coverage information when running:
+npm run test:coverage
+
+Expected Coverage Report Format:
+------------------------------
+File                      | % Stmts | % Branch | % Funcs | % Lines
+--------------------------|---------|----------|---------|--------
+All files                |   75.86 |    62.50 |   78.57 |   75.86
+ src/Board.ts            |   85.71 |    66.67 |   85.71 |   85.71
+ src/Game.ts             |   73.68 |    61.54 |   75.00 |   73.68
+ src/ShipPlacer.ts       |   68.18 |    59.29 |   75.00 |   68.18
+
+Note: The actual coverage report will be generated when running the tests.
+To generate the report, run:
+
+```bash
+npm run test:coverage
+```
+
+The coverage thresholds are set to:
+- Branches: 60%
+- Functions: 60%
+- Lines: 60%
+- Statements: 60%
+
+Any coverage below these thresholds will cause the tests to fail. 
