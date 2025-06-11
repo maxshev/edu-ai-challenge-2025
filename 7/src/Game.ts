@@ -18,8 +18,8 @@ export class Game {
   }
 
   private initializeGameState(): GameState {
-    const playerShips = this.shipPlacer.placeShipsRandomly(this.playerBoard.getBoard());
-    const cpuShips = this.shipPlacer.placeShipsRandomly(this.cpuBoard.getBoard());
+    const playerShips = this.shipPlacer.placeShipsRandomly(this.playerBoard.getBoard(), true);
+    const cpuShips = this.shipPlacer.placeShipsRandomly(this.cpuBoard.getBoard(), false);
 
     return {
       playerShips,

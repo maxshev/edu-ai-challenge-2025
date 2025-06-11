@@ -7,7 +7,7 @@ export class ShipPlacer {
     this.config = config;
   }
 
-  public placeShipsRandomly(board: BoardCell[][]): Ship[] {
+  public placeShipsRandomly(board: BoardCell[][], isPlayer: boolean): Ship[] {
     const ships: Ship[] = [];
     let placedShips = 0;
 
@@ -18,7 +18,7 @@ export class ShipPlacer {
       if (this.canPlaceShip(board, startRow, startCol, orientation)) {
         const ship = this.createShip(startRow, startCol, orientation);
         ships.push(ship);
-        this.updateBoard(board, ship);
+        this.updateBoard(board, ship, isPlayer);
         placedShips++;
       }
     }
@@ -75,11 +75,13 @@ export class ShipPlacer {
     return { locations, hits };
   }
 
-  private updateBoard(board: BoardCell[][], ship: Ship): void {
+  private updateBoard(board: BoardCell[][], ship: Ship, isPlayer: boolean): void {
     ship.locations.forEach(location => {
       const row = parseInt(location[0]);
       const col = parseInt(location[1]);
-      board[row][col] = 'S';
+      if (isPlayer) {
+        board[row][col] = 'S';
+      }
     });
   }
 } 

@@ -19,12 +19,12 @@ describe('ShipPlacer', () => {
 
   describe('placeShipsRandomly', () => {
     it('should place the correct number of ships', () => {
-      const ships = shipPlacer.placeShipsRandomly(board);
+      const ships = shipPlacer.placeShipsRandomly(board, true);
       expect(ships.length).toBe(config.numShips);
     });
 
     it('should create ships of correct length', () => {
-      const ships = shipPlacer.placeShipsRandomly(board);
+      const ships = shipPlacer.placeShipsRandomly(board, true);
       ships.forEach(ship => {
         expect(ship.locations.length).toBe(config.shipLength);
         expect(ship.hits.length).toBe(config.shipLength);
@@ -32,7 +32,7 @@ describe('ShipPlacer', () => {
     });
 
     it('should not place ships that overlap', () => {
-      const ships = shipPlacer.placeShipsRandomly(board);
+      const ships = shipPlacer.placeShipsRandomly(board, true);
       const allLocations = new Set<string>();
       
       ships.forEach(ship => {
@@ -44,7 +44,7 @@ describe('ShipPlacer', () => {
     });
 
     it('should place ships within board boundaries', () => {
-      const ships = shipPlacer.placeShipsRandomly(board);
+      const ships = shipPlacer.placeShipsRandomly(board, true);
       
       ships.forEach(ship => {
         ship.locations.forEach(location => {
@@ -59,10 +59,22 @@ describe('ShipPlacer', () => {
     });
 
     it('should initialize ships with no hits', () => {
-      const ships = shipPlacer.placeShipsRandomly(board);
+      const ships = shipPlacer.placeShipsRandomly(board, true);
       ships.forEach(ship => {
         expect(ship.hits.every(hit => !hit)).toBe(true);
       });
+    });
+
+    it('should only mark ships on board when isPlayer is true', () => {
+      // Test with isPlayer = true
+      const playerBoard = Array(config.boardSize).fill(null).map(() => Array(config.boardSize).fill('~'));
+      const playerShips = shipPlacer.placeShipsRandomly(playerBoard, true);
+      expect(playerBoard.some(row => row.includes('S'))).toBe(true);
+
+      // Test with isPlayer = false
+      const cpuBoard = Array(config.boardSize).fill(null).map(() => Array(config.boardSize).fill('~'));
+      const cpuShips = shipPlacer.placeShipsRandomly(cpuBoard, false);
+      expect(cpuBoard.every(row => row.every(cell => cell === '~'))).toBe(true);
     });
   });
 }); 

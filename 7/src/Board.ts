@@ -54,9 +54,9 @@ export class Board {
     cpuBoard: BoardCell[][],
     playerBoard: BoardCell[][],
   ): string {
-    let display = '\n   --- OPPONENT BOARD ---          --- YOUR BOARD ---\n';
+    let display = '\n--- OPPONENT BOARD ---    --- YOUR BOARD ---\n';
     const header = '  ' + [...Array(cpuBoard.length)].map((_, i) => i).join(' ');
-    display += header + '     ' + header + '\n';
+    display += header + '    ' + header + '\n';
 
     for (let i = 0; i < cpuBoard.length; i++) {
       let row = `${i} `;
