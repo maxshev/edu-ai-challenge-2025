@@ -1,0 +1,41 @@
+Test Report for Type-Safe Validator Library
+
+Test Coverage Summary:
+- Statements   : 89.07% (106/119)
+- Branches     : 78.94% (45/57)
+- Functions    : 80.64% (25/31)
+- Lines        : 88.28% (98/111)
+
+Coverage by File:
+1. Schema.ts           : 100% coverage
+2. index.ts           : 100% coverage
+3. types.ts           : 100% coverage
+4. StringValidator.ts  : 100% coverage
+5. ObjectValidator.ts  : 94.11% coverage
+6. ArrayValidator.ts   : 88.23% coverage
+7. NumberValidator.ts  : 84.61% coverage
+8. BooleanValidator.ts : 80% coverage
+9. DateValidator.ts    : 41.66% coverage
+
+Test Results:
+- Test Suites: 2 passed, 2 total
+- Tests: 13 passed, 13 total
+- Snapshots: 0 total
+- Time: 6.1s
+
+Areas for Improvement:
+1. DateValidator needs more test coverage, particularly for:
+   - Invalid Date object handling
+   - Date string format validation
+   - Edge cases
+
+2. BooleanValidator could use more test cases for:
+   - Optional value handling
+   - Edge cases
+
+3. NumberValidator needs additional tests for:
+   - Edge cases around min/max values
+   - NaN handling
+
+Overall Assessment:
+The library has good test coverage (>80%) for most components, with core functionality well tested. The DateValidator requires additional test coverage to meet the project's quality standards. 

@@ -1,0 +1,21 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=crlf
+
+# TypeScript files
+*.ts text eol=crlf
+*.tsx text eol=crlf
+
+# JavaScript files
+*.js text eol=crlf
+*.jsx text eol=crlf
+*.json text eol=crlf
+
+# Documentation
+*.md text eol=crlf
+*.txt text eol=crlf
+
+# Config files
+*.yml text eol=crlf
+*.yaml text eol=crlf
+.gitignore text eol=crlf
+.gitattributes text eol=crlf 
