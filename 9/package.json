@@ -1,0 +1,13 @@
+{
+  "name": "service-analyzer",
+  "version": "1.0.0",
+  "description": "A Node.js application that analyzes services using OpenAI GPT-4",
+  "main": "serviceAnalyzer.js",
+  "scripts": {
+    "start": "node serviceAnalyzer.js"
+  },
+  "dependencies": {
+    "openai": "^4.28.0",
+    "dotenv": "^16.4.1"
+  }
+} 
