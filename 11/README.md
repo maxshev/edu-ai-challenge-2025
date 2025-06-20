@@ -24,7 +24,6 @@ This Node.js application transcribes audio files using OpenAI's Whisper API, gen
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd audio-transcription-analyzer
    ```
 
 2. Install dependencies:
