@@ -1,0 +1,38 @@
+{
+  "word_count": 968,
+  "speaking_speed_wpm": 130,
+  "frequently_mentioned_topics": [
+    {
+      "topic": "Chest Pain Description and Characteristics",
+      "mentions": 9
+    },
+    {
+      "topic": "Concerns about Possible Heart Attack",
+      "mentions": 6
+    },
+    {
+      "topic": "Symptom Onset and Duration",
+      "mentions": 5
+    },
+    {
+      "topic": "Associated Symptoms and Absence of Other Symptoms",
+      "mentions": 5
+    },
+    {
+      "topic": "Past Medical and Family History Related to Heart Disease",
+      "mentions": 4
+    },
+    {
+      "topic": "Use of Medications and Symptom Relief",
+      "mentions": 3
+    },
+    {
+      "topic": "Lifestyle Factors and Social History",
+      "mentions": 3
+    },
+    {
+      "topic": "Diagnostic Testing and Management Plan",
+      "mentions": 3
+    }
+  ]
+}
